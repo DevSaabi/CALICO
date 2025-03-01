@@ -168,10 +168,30 @@
 
   <main class="main">
 
+    <section class="background-video">
+        <div class="overlay">
+          
+        </div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="assets/videos/01.mp4" type="video/mp4">
+
+        </video>
+      
+        <div class="container h-100">
+          <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+              <h1 class="display-Calico">
+                CACLICO<span class="c-symbol">©</span>
+              </h1>
+              <p class="lead mb-0">Welcome to Our World</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
     <!-- Hero Section -->
     <section id="hero" class="hero section">
-
-      <div class="container">
+      <div class="container position-relative">
         <div class="row gy-4">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
             <h1 data-aos="fade-up" class="fall-animation">
@@ -183,10 +203,15 @@
               <span>L</span><span>i</span><span>f</span><span>e</span><span>’</span><span>s</span> 
               <span>M</span><span>i</span><span>l</span><span>e</span><span>s</span><span>t</span><span>o</span><span>n</span><span>e</span><span>s</span>
             </h1>
-            <p data-aos="fade-up" data-aos-delay="100">We are passionate photographers specializing in weddings, events, and portraits.</p>
+            <p data-aos="fade-up" data-aos-delay="100">
+              We are passionate photographers specializing in weddings, events, and portraits.
+            </p>
             <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
               <a href="#about" class="btn-get-started">Book a Session <i class="bi bi-arrow-right"></i></a>
-              <a href="https://www.youtube.com/watch?v=JpH1Qvqm7I4" class="glightbox btn-watch-video d-flex align-items-center justify-content-center ms-0 ms-md-4 mt-4 mt-md-0"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+              <a href="https://www.youtube.com/watch?v=JpH1Qvqm7I4" 
+                 class="glightbox btn-watch-video d-flex align-items-center justify-content-center ms-0 ms-md-4 mt-4 mt-md-0">
+                <i class="bi bi-play-circle"></i><span>Watch Video</span>
+              </a>
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out">
@@ -194,7 +219,9 @@
           </div>
         </div>
       </div>
-    </section><!-- /Hero Section -->
+      
+    </section>
+    <!-- /Hero Section -->
 
     <!-- About Section -->
     <section id="about" class="about section">
