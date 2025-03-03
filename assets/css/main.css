@@ -2150,6 +2150,9 @@ section,
 }
 
 .neon-text{
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
   margin-top: 10px;
   font-size: 1.5rem;
   color: black;
@@ -2853,11 +2856,24 @@ section,
 }
 .c-symbol {
   position: absolute;
-  top: -10px; /* Adjust position above the letter I */
-  left: 64%;
+  top: -7px; /* Adjust position above the letter I */
+  left: 64.5%;
   transform: translateX(-50%);
-  font-size: 20px; /* Smaller size for the C */
+  font-size: 10px; /* Smaller size for the C */
 }
 
 
 
+.responsive-video {
+  width: 100%;  /* Make video fill the container */
+  max-width: 700px; /* Set a max width for large screens */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+@media (max-width: 768px) { 
+  /* Adjust for smaller screens */
+  .responsive-video {
+      max-width: 100%; /* Allow full width on mobile */
+  }
+}
